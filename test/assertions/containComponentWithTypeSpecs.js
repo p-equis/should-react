@@ -1,7 +1,7 @@
 import should from 'should';
-import '../lib/assertions/containComponentWithType';
+import '../../lib/assertions/containComponentWithType';
 import React from 'react/addons'
-const ReactTestUtils = React.addons.TestUtils;
+const render = React.addons.TestUtils.renderIntoDocument;
 
 describe('containComponentWithType', () => {
   
@@ -10,14 +10,9 @@ describe('containComponentWithType', () => {
   }
 
   context('when the root element contains at least one instance of the type', () => {
-    xit('passes', () => {
-      root = ReactTestUtils.renderIntoDocument(
-        <div>
-          <Type/>
-        </div>
-      );
-
-      root.should.containComponentOfType(Type);
+    it('passes', () => {
+      const root = render(<a><Type/></a>);
+      root.should.containComponentWithType(Type);
     });
   });
 
