@@ -4,7 +4,8 @@
   "description": "ShouldJS extensions for testing ReactJS components.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "compile" : "babel src -d dist"
   },
   "keywords": [
     "should",
@@ -16,6 +17,7 @@
   "author": "Paul Phillips",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
     "babel-plugin-transform-react-jsx": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
