@@ -2,10 +2,11 @@
   "name": "should-react",
   "version": "0.0.1",
   "description": "ShouldJS extensions for testing ReactJS components.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
-    "compile" : "babel src -d dist"
+    "compile" : "babel src -d dist",
+    "prepublish" : "npm run compile"
   },
   "keywords": [
     "should",
