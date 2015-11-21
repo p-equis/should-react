@@ -1,5 +1,5 @@
 import should from 'should';
-import '../../lib/assertions/containComponentWithType';
+import '../../src/assertions/containComponentWithType';
 import React from 'react/addons'
 const render = React.addons.TestUtils.renderIntoDocument;
 
