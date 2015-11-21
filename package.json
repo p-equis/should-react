@@ -16,6 +16,7 @@
     "jasmine"
   ],
   "author": "Paul Phillips",
+  "repository" : "https://github.com/p-equis/should-react",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.2.0",
