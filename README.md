@@ -1,6 +1,9 @@
 # should-react
 shouldjs extensions to make testing reactjs a little easier
 
+[![Build Status](https://travis-ci.org/p-equis/should-react.svg?branch=master)](https://travis-ci.org/p-equis/should-react)
+
+
 ## use cases
 
 - checking that a component exists
